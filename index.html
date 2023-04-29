@@ -9,8 +9,19 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( "#tabs1" ).tabs();
+      $( "#tabs2" ).tabs();
+    });
+  </script>
+
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -45,20 +56,14 @@
     background: transparent;
     }
 
-    ul.tabs{
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-}
+  ul {
+    list-style:none;
+  }
+  .li {
+    float:left;
+    margin-right: 40px;
+  }
 
-.tab-button{
-  display: inline-block;
-	background: transparent;
-	color: black;
-  border:transparent;
-	padding: 10px 15px;
-	cursor: pointer;
-}
 
 
 </style>
@@ -75,8 +80,9 @@
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Seong Chu Lim</a></h1>
-        <div class="social-links mt-3 text-center">
+        <div class="social-links mt-3" style="text-align:center">
           <a target="_blank" href="mailto:seonglim@skku.edu" class="gmail"><i class="bx bx-envelope"></i></a>
+          
         </div>
       </div>
 
@@ -88,6 +94,7 @@
           <li><a href="#research" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Research</span></a></li>
           <li><a href="#publications" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Publications</span></a></li>
           <li><a href="#community" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Community</span></a></li>
+          <li><a href="http://does.skku.edu"><a href="http://does.skku.edu" target="_blank" class="skype"><img src="assets/img/favicon.jpg" class="img-fluid rounded-circle" style="width:25px"><i></i> <span>DoES</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -96,8 +103,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Alex Smith</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+      <h1>Energy Transport Lab</h1>
     </div>
   </section><!-- End Hero -->
 
@@ -434,26 +440,30 @@
       </div>
 
       <div class="container">
-        <nav id="tab-button-nav">
-          <button class="tab-button" data-tab-section="tab-section-1"><b>2023</b></button>
-          <button class="tab-button" data-tab-section="tab-section-2"><b>2022</b></button>
-          <button class="tab-button" data-tab-section="tab-section-3"><b>2021</b></button>
-          <button class="tab-button" data-tab-section="tab-section-4"><b>2020</b></button>
-          <button class="tab-button" data-tab-section="tab-section-5"><b>2019</b></button>
-          <button class="tab-button" data-tab-section="tab-section-6"><b>~2018</b></button>
-        </nav>
-        <br>
-        <section id="tab-section-1" class="tab-section">
+        <div id="tabs1">
+          <ul>
+            <li class="li"><a href="#tabs-1"><b>2023</b></a></li>
+            <li class="li"><a href="#tabs-2"><b>2022</b></a></li>
+            <li class="li"><a href="#tabs-3"><b>2021</b></a></li>
+            <li class="li"><a href="#tabs-4"><b>2020</b></a></li>
+            <li class="li"><a href="#tabs-5"><b>2019</b></a></li>
+            <li class="li"><a href="#tabs-6"><b>~2018</b></a></li>
+            <br>
+          </ul>
+        <div id="tabs-1">
+          <br>
           <li>Giheon Kim, Dang Xuan Dang, Hamza Zad Gul, Hyunjin Ji, Eun Kyu Kim, Seong Chu Lim, "Identification of Carrier-Resolved Trap Origins in MoTe2 Field-Effect Transistor" Submitted to Applied Physics Letters (Dec. 2022)<br><br></li>
           <li onClick="window.open('https://linkinghub.elsevier.com/retrieve/pii/S0008622322010880','','')" style="cursor:pointer">Byung-wook Ahn, Jeongyong Kim, Seungsu Kang, Suar Oh, Giheon Kim, Woo-Sung Jang, Eunju Yeo, Young-Min Kim, Young Chul Choi,* Dong-soon Kwag,* Seong Chu Lim*, "Chemical analysis of carbonaceous particles inside Cu wire molten by electrical arcing" Carbon 204, 70 (2023)<br><br></li>
           <li onClick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S1386947722003903?via%3Dihub','','')" style="cursor:pointer">Seung Su Kang, Ji Yeon Kim, Wooseon Choi, Byungwook Ahn, Suar Oh, Giheon Kim, Eunji Sim, Young-Min Kim, Won Seok Kim*, Young Chul Choi*, Seong Chu Lim*, 'Electrical Transport Behaviors of Ni layer on Carbon Fiber' Physica E 147, 115567 (2023)<br><br></li>
           <li>Yongjin Kim, Thao Phuong Nguyen, Mihyun Yang, Hyojin Yoon, Manos K. Sharma, Jeongsub Lee, Hoyeol Lee, Suar Oh, Moonhor Ree, Junwoo Son, Ji Hoon Shim, Jeehoon Kim, Seong Chu Lim*, and Kyuwook Ihm*, 'Hidden information educed from electron spectroscopy: carrier-resolution ultra-low mobility of nanochannels' (Received minor revision)</li>
-        </section>
-        <section id="tab-section-2" class="tab-section" hidden>
+        </div>
+        <div id="tabs-2">
+          <br>
           <li onClick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S2211285522007984','','')">Thi Uyen Tran, Jaeuk Bang, Xuan Dang Dang, Suar Oh, Hai Phuong Duong, Seung Su Kang, Hyang Mi Yu, Wonkil Sakong, Minjeong Kim, Hyung-Seok Choi, Jaeyoon Baik, Mun Seok Jeong*, and Seong Chu Lim*, 'Adaptive Photocurrent Generation of ReS2-2D Te Heterostructure' Nano Energy 102, 107720 (Aug. 2022)<br><br></li>
           <li onClick="window.open('https://pubs.acs.org/doi/10.1021/acs.nanolett.2c00853','','')" style="cursor:pointer">Wonkil Sakong, Hamza Zad Gul, Byungwook Ahn, Suar Oh, Giheon Kim, Eunji Sim, Jaeuk Bahng, Junhee Kim, Hojoon Yi, Minjeong Kim, Min Hee Yun and Seong Chu Lim*, ‘Optical Duality of Molybdenum Disulfide: Metal and Semiconductor’, Nano Letters 22, 5207 (Jun. 2022)<br><br></li>
-        </section>
-        <section id="tab-section-3" class="tab-section" hidden>
+        </div>
+        <div id="tabs-3">
+          <br>
           <li onClick="window.open('https://pubs.acs.org/doi/10.1021/acs.jpcc.1c07183','','')" style="cursor:pointer">Hyang Mi Yu, Chulho Park, Dae Young Park, Seong Chu Lim, Gon Namkoong and Mun Seok Jeong, ‘Probing Pathways of Conductive Filaments of FAMAPbI3 with Controlled FA Composition Using Conductive Atomic Force Microscopy’, Journal of Physical Chemistry C 125, 25067-25074 (Nov, 2021)<br><br></li>
           <li onClick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S2352940721003486?via%3Dihub','','')" style="cursor:pointer">Thi Uyen Tran, Duc Anh Nguyen, Ngoc Thanh Duong, Dae YoungPark, Duc Hieu Nguyene, Phuong Huyen Nguyen, Chulho Parke, Juchan Leee, Byung Wook Ahn, Hyunsik Im, Seong Chu Lim* and Mun Seok Jeong*, ‘Gate Tunable Photoresponse of a Two-Dimensional p-n Junction for High Performance Broadband Photodetector’, Applied Materials Today 26, 101285 (Dec, 2021)<br><br></li>
           <li onClick="window.open('https://www.mdpi.com/1996-1944/14/21/6422','','')" style="cursor:pointer">Hyang Mi Yu, Byeong Geun Jeong, Dae Young Park, Seong Chu Lim, Gon Namkoong and Mun Seok Jeong, ‘Investigation of Cation Exchange Behaviors of FAxMA1-xPbI3 Films Using Dynamic Spin-Coating’, Materials 14, 6422 (Aug, 2021)<br><br></li>
@@ -461,21 +471,24 @@
           <li onClick="window.open('https://pubs.acs.org/doi/10.1021/acsami.1c09725','','')" style="cursor:pointer">Hyeon Jun Jeong, Chulho Park, Hobeom Jeon, Kang-Nyeoung Lee, Juchan Lee, Seong Chu Lim, Gon Namkoong* and Mun Seok Jeong, ‘Quasi-2D Halide Perovskite Memory Device Formed by Acid-Base Binary Ligand Solution Composed of Oleylamine and Oleic Acid’, ACS Applied Materials & Interfaces 13, 40891 (Aug, 2021)<br><br></li>
           <li onClick="window.open('https://onlinelibrary.wiley.com/doi/10.1002/advs.202102437','','')" style="cursor:pointer">Junseok Seo, Jin Hee Lee, Jinsu Pak, Kyungjune Cho, Jae-Keun Kim, Jaeyoung Kim,Juntae Jang, Heebeom Ahn, Seong Chu Lim, Seungjun Chung, Keehoon Kang* and Takhee Lee*, ‘Ultrasensitive Photodetection in MoS2 Avalanche Phototransistors’, Advanced Science 8, 2102437 (Aug, 2021)<br><br></li>
           <li onClick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S0169433221009466?via%3Dihub','','')" style="cursor:pointer">Chulho Park, Juchan Lee, Min Jeong Kim, Ngoc Thanh Duong, Mun Seok Jeong* and Seong Chu Lim*, ‘Crossover between thermo- and field-assisted carrier injection in staggered pn heterojunction of MoTe2 and ReS2’, Applied Surface Science 558, 149870 (April, 2021)<br><br></li>
-        </section>
-        <section id="tab-section-4" class="tab-section" hidden>
+        </div>
+        <div id="tabs-4">
+          <br>
           <li onClick="window.open('https://pubs.acs.org/doi/10.1021/acsami.0c09621','','')">Jorge Torres, Yulin Liu, Seth So, Hojoon Yi, Sangho Park, Jung-Kun Lee, Seong Chu Lim and Minhee Yun, ‘Effects of Surface Modifications to Single and Multilayer Graphene Temperature Coefficient of Resistance’, ACS Applied Materials & Interfaces 12, 48890-48898 (Sep, 2020)<br><br></li>
           <li onClick="window.open('https://iopscience.iop.org/article/10.1088/1361-6528/ab7f7e','','')" style="cursor:pointer">Hyunjin Ji, Byoung Hee Moon, Hojoon Yi, Suar Oh, Wonkil Sakong, Nguyen Thi Thanh Huong and Seong Chu Lim, ‘Thickness effect on low-power driving of MoS2 transistors in balanced double-gate fields’, Nanotechnology 31, 255201 (Apr, 2020)<br><br></li>
           <li onClick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S0008622320302086?via%3Dihub','','')" style="cursor:pointer">Hojoon Yi, Ji Yeon Kim, Hamza Zad Gul, Seungsu Kang, Giheon Kim, Eunji Sim, Hyunjin Ji, Jungwon Kim, Young Chul Choi, Won Seok Kim and Seong Chu Lim, ‘Wiedemann-Franz law of Cu-coated carbon fiber’, Carbon 162, 339-345 (Feb. 2020)<br><br></li>
-        </section>
-        <section id="tab-section-5" class="tab-section" hidden>
+        </div>
+        <div id="tabs-5">
+          <br>
           <li onClick="window.open('https://ieeexplore.ieee.org/document/8813125?source=authoralert','','')">Hyunjin Ji, Hojoon Yi, Nguyen Thi Thanh Huong, Wonkil Sakong, Min-Kyu Joo, Hyun Kim and Seong Chu Lim, ‘Impact of heat treatment on a hetero-stacked MoS2/h-BN field-effect transistor’, IEEE ELECTRON DEVICE LETTERS 40, 1626 (Aug. 2019)<br><br></li>
           <li onClick="window.open('https://pubs.acs.org/doi/10.1021/acsami.9b06715','','')" style="cursor:pointer">Hyunjin Ji, Mohan Kumar Ghimire, Gwanmu Lee, Hojoon Yi, Wonkil Sakong, Hamza Zad Gul, Yoojoo Yun, Jinbao Jiang, Joonggyu Kim, Min-Kyu Joo, Dongseok Suh and Seong Chu Lim, ‘Temperature-Dependent Opacity of Gate Field Inside MoS2 Field Effect Transistor’, ACS Applied Materials & Interfaces 11, 29022 (Jul. 2019)<br><br></li>
           <li onClick="window.open('https://iopscience.iop.org/article/10.1088/1361-6528/ab1f36','','')" style="cursor:pointer">Hyunjin Ji, Hojoon Yi, Wonkil Sakong, Hyun Kim and Seong Chu Lim, ‘Reduced interfacial fluctuation leading enhanced mobility in a monolayer MoS2 DG FET under low vertical electric field’, Nanotechnology 30, 345206 (May. 2019)<br><br></li>
           <li onClick="window.open('https://pubs.acs.org/doi/10.1021/acsami.9b00977','','')" style="cursor:pointer">Hamza Zad Gul, Wonkil Sakong, Hyunjin Ji, Jorge Torres, Hojoon Yi, Mohan Kumar Ghimire, Jung Hyun Yoon, Min Hee Yun, Ha Ryong Hwang, Young Hee Lee, and Seong Chu Lim. ‘Semimetallic Graphene for Infrared Sensing’, ACS Applied Materials & Interfaces 11, 19565 (May. 2019)<br><br></li>
           <li onClick="window.open('https://pubs.acs.org/doi/10.1021/acsnano.9b00014','','')" style="cursor:pointer">Ngoc Thanh Duong , Juchan Lee, Seungho Bang, Chulho Park, Seong Chu Lim and Mun Seok Jeong, ‘Modulating the Functions of MoS2/MoTe2 van der Waals Heterostructure via Thickness Variation’, ACS Nano 13, 4478 (Apr. 2019)<br><br></li>
           <li onClick="window.open('https://pubs.acs.org/doi/abs/10.1021%2Facsami.9b00050','','')" style="cursor:pointer">Mohan Kumar Ghimire, Hyunjin Ji, Hamza Zad Gul, Hojoon Yi, Jinbao Jiang, Seong Chu Lim, ‘Defect-Affected Photocurrent in MoTe2 FETs’, ACS Applied Materials & Interfaces 11, 10068 (Feb. 2019)<br><br></li>
-        </section>
-        <section id="tab-section-6" class="tab-section" hidden>
+        </div>
+        <div id="tabs-6">
+          <br>
           <!--2018년-->
           <li onClick="window.open('https://link.springer.com/article/10.3938/jkps.73.1716','','')">Dae Young Park, Hye Ryung Byun, A Young Lee, Ho Min Choi, Seong Chu Lim and Mun Seok Jeong, ‘Synthesis and Characterization of Bandgap-modulated Organic Lead Halide Single Crystals’, Journal of Korean Physical Society 73, 1716 (Dec. 2018)<br><br></li>
           <li onClick="window.open('https://pubs.rsc.org/en/content/articlelanding/2018/nr/c8nr01711e','','')" style="cursor:pointer">Thanh Ngoc Duong, Seungho Bang, Seung Mi Lee, Dang Xuan Dang, Dong Hoon Kuem, Juchan Lee, Mun Seok Jeong and Seong Chu Lim, ‘Parameter Controls for Enhanced Peak-to-Valley Current Ratio in MoS2/MoTe2 van der Waals Heterostructure’, Nanoscale 10, 12322 (Jun. 2018)<br><br></li>
@@ -605,7 +618,7 @@
           <li onClick="window.open('http://www.koreascience.or.kr/article/JAKO200022463504684.page','','')" style="cursor:pointer">Keun Soo Kim, Young Soo Park, Kay Hyeok An, Hee Jin Jeong, Won Seok Kim, Young Chul Choi, Seung Mi Lee, Jeong Mi Moon, Dong Chul Chung, Dong Jae Bae, Seong Chu Lim, Young Seak Lee and Young Hee Lee, ‘Synthesis of High Purity Multiwalled and Singlewalled Carbon Nanotubes by Arc-discharge’, Carbon Letters 1, 53 (Sep. 2000)<br><br></li>
           <!--1999년-->
           <li onClick="window.open('https://pubs.aip.org/aip/apl/article/75/8/1179/516638/Effects-of-O2-H2-and-N2-gases-on-the-field','','')" style="cursor:pointer">Seong Chu Lim, R. E. Stallcup, I. A. Akwani, J. M. Perez, ‘Effects of O2, H2, and N2 gases on the field emission properties of diamond-coated microtips’, Applied Physics Letters 75, 1179 (Jun. 1999)<br><br></li>
-        </section>
+        </div>
       </div>
     </section><!-- End publications Section -->
 
@@ -616,37 +629,45 @@
         <div class="section-title">
           <h2>Presentation</h2>
         </div>
+        <div class="container">
+          <div id="tabs2">
+            <ul>
+              <li class="li"><a href="#tabs-1"><b>2023</b></a></li>
+              <li class="li"><a href="#tabs-2"><b>2022</b></a></li>
+              <li class="li"><a href="#tabs-3"><b>2021</b></a></li>
+              <li class="li"><a href="#tabs-4"><b>2020</b></a></li>
+              <li class="li"><a href="#tabs-5"><b>2019</b></a></li>
+              <li class="li"><a href="#tabs-6"><b>~2018</b></a></li>
+              <br>
+            </ul>
 
-          <div class="container">
-            <nav id="tab-button-nav">
-              <button class="tab-button" data-tab-section="tab-section-7"><b>2023</b></button>
-              <button class="tab-button" data-tab-section="tab-section-8"><b>2022</b></button>
-              <button class="tab-button" data-tab-section="tab-section-9"><b>2021</b></button>
-              <button class="tab-button" data-tab-section="tab-section-10"><b>2020</b></button>
-              <button class="tab-button" data-tab-section="tab-section-11"><b>2019</b></button>
-              <button class="tab-button" data-tab-section="tab-section-12"><b>~2018</b></button>
-            </nav>
-            <br>
-            <section id="tab-section-7" class="tab-section">
+            <div id="tabs-1">
+              <br>
               <li>Eunji Sim, Poster Presentation<br>"Comparative analysis of oxygen adsorption on metal monochalcogenide materials with vacancy defects", The 64th Winter Annual Conference of the Korean Vacuum Society<br><br></li>
-              <li>Giheon Kim, Poster Presentation<br>Quantum Materials Symposium 2023<br><br></li>
+              <li>Giheon Kim, Poster Presentation<br>"Nonlinear Hall effect in Tellurene",  Quantum Materials Symposium 2023<br><br></li>
+              <br>
               <li>Tran Thi Uyen, Poster Presentation<br>Quantum Materials Symposium 2023<br><br></li>
-            </section>
-            <section id="tab-section-8" class="tab-section" hidden>
-              <li>Eunji Sim, Oral Presentation<br>"Oxygen Induced Intra- and Inter-layers Modification of beta-InSe: Formation of Pseudo-heterojunction", 2022 Korean Physical Society Fall Meeting</li>
+            </div>
+            <div id="tabs-2">
+              <br>
+              <li>Eunji Sim, Oral Presentation<br>"Oxygen Induced Intra- and Inter-layers Modification of beta-InSe: Formation of Pseudo-heterojunction", 2022 Korean Physical Society Fall Meeting<br><br></li>
               <li>Prof. Seong Chu Lim, Oral Presentation<br>"Identification and Modulation of Photocurrent in 2D Layered Materials", 20th Internaltional Symposium on the Physics on Semiconductors and Applications<br><br></li>
               <li>Prof. Seong Chu Lim, Oral Presentation<br>"Photocurrent generation and control on 2D layered materials", 4월 첫금 반도체 물리 포럼<br><br></li>
               <li>Eunji Sim, Oral Presentation<br>"Defect induced surface oxidation of beta-InSe", The 62nd Winter Annual Conference of the Korean Vacuum Society<br><br></li>
-            </section>
-            <section id="tab-section-9" class="tab-section" hidden>
-              <li>Eunji Sim, Poster Presentation<br>"Pseudo-heterojunction formation by oxygen adsorption on beta-InSe crystal", The 12th International Conference on Advanced Materials and Devices</li>
+            </div>
+            <div id="tabs-3">
+              <br>
+              <li>Eunji Sim, Poster Presentation<br>"Pseudo-heterojunction formation by oxygen adsorption on beta-InSe crystal", The 12th International Conference on Advanced Materials and Devices<br><br></li>
               <li>Eunji Sim, Poster Presentation<br>"Pseudo-heterojunction formation by oxygen adsorption on beta-InSe crystal", The 61st Summer Annual Conference of the Korean Vacuum Society<br><br></li>
               <li>Prof. Seong Chu Lim, Oral Presentation<br>"Controlled Defect Engineering in 2D layered Materials", 제2회 중이온이용 물성연구 워크숍<br><br></li>
-            </section>
-            <section id="tab-section-10" class="tab-section" hidden>
-            </section>       
-            <section id="tab-section-11" class="tab-section" hidden>
-              <li>Hojoon Yi, Poster Presentation<br>"Enhanced heat flow study of carbon fiber with metal coating", The 11th International Conference on Advanced Materials and Devices</li>
+            </div>
+            <div id="tabs-4">
+              <br>
+              <p></p>
+            </div>
+            <div id="tabs-5">
+              <br>
+              <li>Hojoon Yi, Poster Presentation<br>"Enhanced heat flow study of carbon fiber with metal coating", The 11th International Conference on Advanced Materials and Devices<br><br></li>
               <li>Hojoon Yi, Poster Presentation<br>"Wiedemann-Franz Law of Core-Shelled Cu-coated Carbon Fiber", 2019 Korean Physical Society Fall Meeting<br><br></li>
               <li>Hojoon Yi, Poster Presentation<br>"Thermal Conductivity of Metal-coated Carbon Fiber", 2019 Korean Physical Society Spring Meeting<br><br></li>
               <li>Hamza Zad Gul, Poster Presentation<br>"Semimetallic Graphene for IR Sensing", 2019 Korean Physical Society Spring Meeting<br><br></li>
@@ -654,9 +675,10 @@
               <li>Hojoon Yi, Poster Presentation<br>"Thermal conductivity of metal-coated carbon fibers", The 5th Muju International Winter School Series<br><br></li>
               <li>Dang Xuan Dang, Poster Presentation<br>"The broad range pressure detection by electro-thermal response of metal-coated carbon fiber", The 5th Muju International Winter School Series<br><br></li>
               <li>Wonkil Sakong, Poster presentation<br>"Broadband photoresponse of multi-layer MoS2 from visible to infrared through metal-insulator transition", The 5th Muju International Winter School Series<br><br></li>
-            </section>
-            <section id="tab-section-12" class="tab-section" hidden>
-              <li>Prof. Seong Chu Lim, Invited Speaker<br>"Device Performance of MoS2 Field Effect Transistor Depending on Junction Structure and Channel Thickness", The 19th International Symposium on the Physics of Semiconductor and Applications</li>
+            </div>
+            <div id="tabs-6">
+              <br>
+              <li>Prof. Seong Chu Lim, Invited Speaker<br>"Device Performance of MoS2 Field Effect Transistor Depending on Junction Structure and Channel Thickness", The 19th International Symposium on the Physics of Semiconductor and Applications<br><br></li>
               <li>Prof. Seong Chu Lim<br>"High Field THz Spectroscopy of Monolayer Graphene: Effect of Grain Size and Doping", 233rd Electrochemical (ECS) Meeting<br><br></li>
               <li>Mohan Kumar Ghimire, Poster Presentation<br>"Graphene-CdSe Quantum Dot Hybrid as a Platform for the Control of Carrier Temperature Link", The 23th Nanotube Workshop<br><br></li>
               <li>Dang Xuan Dang, Poster Presentation<br>"In-situ multi-dimensional actuation measurement method for tensile actuation of paraffin-infiltrated multi-wall carbon nanotube yearns", The 23th Nanotube Workshop<br><br></li>
@@ -667,82 +689,47 @@
               <li>Hamza Zad Gul, Oral Presentation<br>"Photocurrent of Monolayer MoS2 as a function of Back Gate Bias", 2015 Korean Physical Society Fall Meeting<br><br></li>
               <li>Hamza Zad Gul, Poster Presentation<br>"Photodetectors based on CVD grown graphene", The 2nd Muju International Winter School Series with 20th Nanotube Workshop<br><br></li>
               <li>Mohan Kumar Ghimire, Poster Presentation<br>"Si quantum dots with ion-gel gate dielectrics", The 2nd Muju International Winter School Series with 20th Nanotube Workshop<br><br></li>
-            </section>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section><!-- End Presentation Section -->
+      </div><!--tab-->
+    </section><!-- End Presentation Section -->
 
     <!-- ======= community Section ======= -->
+    
+  </div><!-- End off container -->
+</section><!-- End off Blog Section -->
     <section id="community" class="community">
       <div class="container">
 
         <div class="section-title">
           <h2>Community</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+          </div>
 
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+        <div class="main_blog sections">
+          <div class="head_title text-center">
+            <div class="main_blog_content">
+               <div class="col-sm-6">
+                <div class="single_blog_area textwhite">
+                  <div class="row">
+                    <div class="col-sm-6 no-padding">
+                      <div class="single_blog_img">
+                        <img src="assets/images/blog1.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-sm-6 no-padding">
+                      <div class="single_blog_text s_b_left">
+                        <h3><a href="community.html" class="read_more">Read More >></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
-
           </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
         </div>
-
       </div>
-    </section><!-- End community Section -->
-
+    </section>
   </main><!-- End #main -->
 
   <script>
@@ -753,7 +740,7 @@
       if (!e.target.classList.contains('tab-button')) {
         return;
       }
-      
+
       const focusedTabId = e.target.dataset.tabSection;
 
       $sections.forEach(($section) => {
@@ -762,8 +749,9 @@
         } else {
           $section.setAttribute('hidden', true);
         }
-      });
     });
+  });     
+     
   </script>
 
   <!-- ======= Footer ======= -->
